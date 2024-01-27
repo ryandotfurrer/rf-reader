@@ -6,8 +6,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
-      },
+        'sans': ['"Noto Sans"', ...defaultTheme.fontFamily.sans],
+        'serif': ['"Noto Serif"', ...defaultTheme.fontFamily.serif],
+       },
     },
   },
   plugins: [require("@tailwindcss/forms")],
