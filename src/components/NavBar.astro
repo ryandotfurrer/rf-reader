@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets'
+import logo from '../logo.webp'
+import CopyEmail from './CopyEmail.astro'
+---
+
+<nav>
+  <ul class="flex gap-3 items-center">
+    <div id="logo-container" class="mr-auto">
+      <li class="justify-start">
+        <a class="no-underline" href="/">
+          <Image
+            class="rounded-full"
+            src={logo}
+            width={65}
+            height={65}
+            alt="Memoji of Ryan Furrer behind a laptop"
+          />
+        </a>
+      </li>
+    </div>
+    <li>
+      <a
+        class="no-underline hover:underline"
+        href="https://github.com/ryanfurrer/astro-tailwind-starter"
+        target="_blank"
+      >
+        GitHub
+      </a>
+    </li>
+    <li>
+      <a
+      class="no-underline hover:underline"
+        href="https://ryanfurrer.com"
+        target="_blank"
+      >
+        Portfolio
+      </a>
+    </li>
+    <CopyEmail />
+  </ul>
+</nav>

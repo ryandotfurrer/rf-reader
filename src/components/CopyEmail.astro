@@ -1,0 +1,29 @@
+---
+---
+
+<li 
+  class="no-underline hover:underline hover:text-gray-900 dark:hover:text-white cursor-pointer" 
+  title="ryandotfurrer@gmail.com"
+  id='copy-email-list-item'
+  >
+  Email Me
+</li>
+
+<script>
+  const emailCopy= document.getElementById('copy-email-list-item');
+
+  
+  function copyEmail(emailCopy: any) {
+    
+    navigator.clipboard
+    .writeText(emailCopy.target.getAttribute)
+    .then(() => {
+      alert("Email copied: ryandotfurrer@gmail.com");
+    })
+    .catch((err) => {
+      console.log(`Failed to copy: ${err}`);
+    });
+  }
+  
+  emailCopy?.addEventListener('click', copyEmail);
+</script>
