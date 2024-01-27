@@ -1,22 +1,12 @@
 ---
-import { Image } from 'astro:assets'
-import logo from '../logo.webp'
-import CopyEmail from './CopyEmail.astro'
+
 ---
 
 <nav>
   <ul class="flex gap-3 items-center">
     <div id="logo-container" class="mr-auto">
       <li class="justify-start">
-        <a class="no-underline" href="/">
-          <Image
-            class="rounded-full"
-            src={logo}
-            width={65}
-            height={65}
-            alt="Memoji of Ryan Furrer behind a laptop"
-          />
-        </a>
+        <a class="no-underline font-semibold font-serif hover:text-teal-800 dark:hover:text-orange-300 text-2xl" href="/"><i class="fa-brands fa-readme"></i> RF Reader</a>
       </li>
     </div>
     <li>
@@ -37,6 +27,5 @@ import CopyEmail from './CopyEmail.astro'
         Portfolio
       </a>
     </li>
-    <CopyEmail />
   </ul>
 </nav>

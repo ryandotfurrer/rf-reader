@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const title = 'RF Reader'
+const description = 'A pared down reader app so you can focus on just that; reading.'
 ---
 
 <Layout title={title}>
@@ -8,73 +9,20 @@ const title = 'RF Reader'
 		<section class="flow mb-36">
 			<div class="pt-24 flow max-w-prose mx-auto text-center">
 				<h1>{title}</h1>
-				<p>
-					A pared down reader app so you can focus on just that; reading.
-				</p>
+				<p>{description}</p>
 			</div>
 		</section>
 		<section class="flow mb-16">
 			<div class="flow max-w-prose mx-auto">
-				<h2 class="text-center">More about this starter</h2>
-				<p>
-					I created this started solely for myself to have a better and faster
-					jumping off point on new Astro projects. While it <em>largely</em>{" "}
-					un-opinionated, that does not mean there are zero opinions.
-				</p>
-				<p>
-					This starter template <em>may</em> grow a bit with styles and
-					components that match my desired style. You can, of course, change
-					whatever you would like in the appropriate folders. But to begin
-					with this starter features:
-				</p>
-				<ul class="ml-10 list-disc">
-					<li>
-						<p>Responsive font-sizing</p>
-					</li>
-					<li>
-						<p>
-							Responsive element spacing due to the addition of the{" "}
-							<code>.flow</code> class
-						</p>
-					</li>
-					<li>
-						<p>
-							Poppins Google Font added to Tailwinds <code>fontSans</code>{" "}
-							class
-						</p>
-					</li>
-					<li>
-						<p>Basic light and dark mode</p>
-					</li>
+				<h2 class="text-center">Reading List</h2>
+				<ul>
+					<li><a href="#">An interesting story</a></li>
+					<li><a href="#">Some research</a></li>
+					<li><a href="#">A sample link</a></li>
+					<li><a href="#">How to get hired</a></li>
+					<li><a href="#">Did you know that I'm a Front-End Developer?</a></li>
+					<li><a href="#">You should check out my GitHub</a></li>
+					<li><a href="#">Do you like reading?</a></li>
 				</ul>
-			</div>
-		</section>
-		<section class="flow mb-16">
-			<div class="flow max-w-prose mx-auto">
-				<h2 class="text-center">
-					The <code>.flow</code> Class
-				</h2>
-				<p>
-					Here is a quick breakdown of the <code>.flow</code> class:
-				</p>
-				<ol class="list-decimal ml-10">
-					<li>
-						<p>Help manage flow and rhythm of elements.</p>
-					</li>
-					<li>
-						<p>
-							Every direct sibling child element of has{" "}
-							<code>margin-block-start</code>
-							added to it.
-						</p>
-					</li>
-					<li>
-						<p>
-							Uses <code>1em</code> as a fallback from clamp syntax.
-						</p>
-					</li>
-				</ol>
-			</div>
-		</section>
 	</main>
 </Layout>
